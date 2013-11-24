@@ -1,0 +1,13 @@
+# Enable Rewriting!
+RewriteEngine on
+
+# Restricts rewriting URLs only to paths that do not actually exist, you don't want this to try to act on a poor image
+# If it isn't an actual folder or file, continue
+# Directories is -d, files is -f
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+# Actual URL rewriting commands
+# Send everything to index.php to handle
+RewriteRule ^.*$ ./index.php 

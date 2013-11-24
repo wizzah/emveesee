@@ -1,0 +1,1 @@
+<p>Hi! My name is <?=$myName?> and I am <?=$age?> years old!</p>
