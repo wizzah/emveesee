@@ -11,7 +11,7 @@ class Controller_Welcome extends Controller
 		$data = array();
 		$data["myName"] = $name;
 		$data["age"] = $age;
-		View::forge("welcome/hello", $data);
+		View::forge("welcome/hello", $data, 'Hello, '.$data["myName"]);
 
 	}
 }

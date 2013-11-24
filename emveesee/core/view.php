@@ -9,10 +9,13 @@ class View
 	 * @param  string $loc  Location of view being forged
 	 * @param  array $data Variables being passed through
 	 */
-	public static function forge($loc, $data) {
+	public static function forge($loc, $data, $title) {
+		${$title} = $title;
+
+		$template = "template.php";
 
 		//include the template
-		include "../emveesee/app/views/template.php";
+		include "../emveesee/app/views/".$template;
 
 		//for every index of $data
 		foreach ($data as $key => $value) {
