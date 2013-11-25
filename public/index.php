@@ -1,7 +1,11 @@
 <?php
 
+define("APP_ROOT", realpath(__DIR__.DIRECTORY_SEPARATOR."..".DIRECTORY_SEPARATOR."emveesee").DIRECTORY_SEPARATOR);
+
+define("APP_CORE", APP_ROOT."core".DIRECTORY_SEPARATOR);
+
 //Includes the autoloader
-include "../emveesee/core/autoloader.php";
+include APP_CORE."autoloader.php";
 
 //Calls autoloader
 //So now I don't have to include every file

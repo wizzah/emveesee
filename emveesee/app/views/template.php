@@ -8,6 +8,6 @@
    <p>Greetings</p>
    <p><a href="/">home</a></p>
    <p><a href="/page2">page2</a></p>
-   <?php include $content ?>
+   <?=$content?>
  </body>
 </html>
